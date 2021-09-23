@@ -1,0 +1,138 @@
+.container{
+    max-width: 800px;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: top;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+nav ul li a{
+    font-size: 14px;
+    line-height: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #0A0A0A;
+}
+.slider-img{
+
+}
+.slider-img img{
+    width: 100%;
+    height: 500px;
+}
+.slider-bg{
+    position: relative;
+}
+.slider-bg::before{
+    content: '';
+    position: absolute;
+    left:0;top:0;right:0;bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 50;
+}
+.slider-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 515px;
+    z-index: 58;
+}
+nav{
+    position: absolute;
+    top: 2%;
+    left: 44%;
+    z-index: 60;
+}
+.hamburg-menu{
+    position: absolute;
+    z-index: 60;
+    top: 0px;
+    left: 110px;
+}
+.slider-content h4{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.slider-content p{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #534F4F;
+}
+.slider-content button{
+    font-weight: normal;
+    font-size: 12px;
+    color: #000000;
+    border: 1px solid #C10303;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: transparent;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+/* .slick-prev::before, .slick-next::before{
+    font-size: 35px;
+    color: #303030;
+} */
+.slick-prev {
+    left: 3% !important;
+    z-index: 60;
+    position: relative;
+  }
+  .slick-next {
+    right: 5% !important;
+    z-index: 58;
+  }
+  .hamburg-menu{display: none;}
+  .hamburg{
+      display: none;
+      z-index: 70;
+      position: relative;
+  }
+  .hamburg-menu button{
+    background: #3B2F46;
+    border: none;
+    padding: 5px 10px;
+  }
+  .menu-btn{
+      color:#fff
+  }
+
+  @media only screen and (max-width:479px){
+    .container{max-width:300px;}
+    .slider-content {width: 182px;}
+    .slider-content h4 {font-size: 18px;line-height: 20px;}
+    .slider-content p {font-size: 13px;}
+    .menu{display: none;}
+    .hamburg-menu{display: block;}
+    .hamburg{
+        display: block;
+    }
+    .hamburg{}
+    .hamburg ul{
+        display: block;
+        background: #fff;
+        padding: 10px 16px;
+        margin-top: 30px;
+        text-align: center;
+        width: 112%;
+    }
+    .hamburg li{
+        width: 100%;
+        border-bottom: 1px solid #000;
+        margin-left: 0;
+        padding: 8px 0;
+    }
+    .hamburg li:last-child{
+        border-bottom: none;
+    }
+    
+}
